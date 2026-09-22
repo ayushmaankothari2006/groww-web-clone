@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Groww - Stocks, Demat, Mutual Funds, SIP, IPO</title>
+  
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/tables.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="app-header">
+    <!-- 1. Primary Navbar -->
+    <nav class="primary-nav">
+      <div class="header-inner-row">
+        <div class="primary-nav-left">
+          <a href="#" class="logo-container" aria-label="Groww Home">
+            <div class="groww-logo-circle">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M5 13C5 8.58172 8.58172 5 13 5C17.4183 5 21 8.58172 21 13" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+                <path d="M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </a>
+          
+          <div class="nav-links-main">
+            <span class="nav-link-item active">Stocks</span>
+            <span class="nav-link-item">F&O</span>
+            <span class="nav-link-item">Mutual Funds</span>
+          </div>
+        </div>
+
+        <div class="primary-nav-right">
+          <!-- Search Bar -->
+          <div class="search-box-container">
+            <span class="search-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+            <span class="search-input-mock">Search Groww....</span>
+            <span class="search-shortcut-chip">Ctrl+K</span>
+          </div>
+
+          <!-- Notification Bell -->
+          <div class="nav-action-btn" aria-label="Notifications">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+            <span class="notification-badge">5</span>
+          </div>
+
+          <!-- Profile Avatar -->
+          <div class="profile-avatar-btn" aria-label="User profile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 2. Secondary Navbar -->
+    <nav class="secondary-nav">
+      <div class="header-inner-row">
+        <div class="secondary-nav-tabs">
+          <span class="sec-tab-item active">Explore</span>
+          <span class="sec-tab-item">Holdings</span>
+          <span class="sec-tab-item">Positions</span>
+          <span class="sec-tab-item">Orders</span>
+          <span class="sec-tab-item">Watchlist</span>
+        </div>
+
+        <div class="secondary-nav-actions">
+          <button class="terminal-button">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="8" cy="8" r="3"></circle>
+              <line x1="8" y1="11" x2="8" y2="21"></line>
+              <circle cx="16" cy="16" r="3"></circle>
+              <line x1="16" y1="3" x2="16" y2="13"></line>
+            </svg>
+            Terminal
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 3. Market Ticker -->
+    <section class="indices-ticker">
+      <div class="header-inner-row">
+        <div class="ticker-items-group">
+          <div class="ticker-item">
+            <span class="ticker-name">NIFTY</span>
+            <span class="ticker-value">23,379.50</span>
+            <span class="ticker-change text-green">33.10 (0.14%)</span>
+          </div>
+
+          <div class="ticker-item">
+            <span class="ticker-name">SENSEX</span>
+            <span class="ticker-value">74,687.46</span>
+            <span class="ticker-change text-green">392.50 (0.53%)</span>
+          </div>
+
+          <div class="ticker-item">
+            <span class="ticker-name">BANKNIFTY</span>
+            <span class="ticker-value">56,357.90</span>
+            <span class="ticker-change text-red">-0.80 (0.00%)</span>
+          </div>
+
+          <div class="ticker-item">
+            <span class="ticker-name">MIDCPNIFTY</span>
+            <span class="ticker-value">14,475.40</span>
+            <span class="ticker-change text-red">-25.35 (0.17%)</span>
+          </div>
+
+          <div class="ticker-item">
+            <span class="ticker-name">FINNIFTY</span>
+            <span class="ticker-value">25,528.10</span>
+            <span class="ticker-change text-green">18.25 (0.07%)</span>
+          </div>
+        </div>
+
+        <button class="ticker-filter-btn" aria-label="Filter indices">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </button>
+      </div>
+    </section>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="page-container">
+    
+    <!-- LEFT PRIMARY CONTENT -->
+    <div class="content-left">
+      
+      <!-- 1. Most bought stocks on Groww -->
+      <section class="dashboard-section">
+        <h2 class="section-title">Most bought stocks on Groww</h2>
+        <div class="cards-grid-4" style="margin-top: 18px;">
+          <!-- Card 1: Sambhv Steel Tubes -->
+          <div class="stock-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box">
+                <span style="font-size: 8px; font-weight: 700; color: #e65100; letter-spacing: 0.5px;">SAMBHV</span>
+              </div>
+            </div>
+            <div class="stock-card-name">Sambhv Steel Tubes</div>
+            <div class="stock-card-bottom">
+              <span class="stock-card-price">₹157.28</span>
+              <span class="stock-card-change text-green">9.71 (6.58%)</span>
+            </div>
+          </div>
+
+          <!-- Card 2: TATAGOLD -->
+          <div class="stock-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box">
+                <div style="display:flex; flex-direction:column; align-items:center;">
+                  <span style="font-size: 7px; font-weight: 700; color: #0077b6;">TATA</span>
+                  <span style="font-size: 5.5px; color: #00b4d8;">mutual fund</span>
+                </div>
+              </div>
+            </div>
+            <div class="stock-card-name">TATAGOLD</div>
+            <div class="stock-card-bottom">
+              <span class="stock-card-price">₹14.79</span>
+              <span class="stock-card-change text-red">-0.06 (0.40%)</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Cupid -->
+          <div class="stock-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box" style="background-color: #d90429; border-color: #d90429;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#ffffff">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="stock-card-name">Cupid</div>
+            <div class="stock-card-bottom">
+              <span class="stock-card-price">₹261.25</span>
+              <span class="stock-card-change text-red">-3.75 (1.42%)</span>
+            </div>
+          </div>
+
+          <!-- Card 4: TATSILV -->
+          <div class="stock-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box">
+                <div style="display:flex; flex-direction:column; align-items:center;">
+                  <span style="font-size: 7px; font-weight: 700; color: #0077b6;">TATA</span>
+                  <span style="font-size: 5.5px; color: #00b4d8;">mutual fund</span>
+                </div>
+              </div>
+            </div>
+            <div class="stock-card-name">TATSILV</div>
+            <div class="stock-card-bottom">
+              <span class="stock-card-price">₹22.62</span>
+              <span class="stock-card-change text-red">-0.12 (0.53%)</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="see-more-link">See more &gt;</a>
+      </section>
+
+      <!-- 2. Top movers today -->
+      <section class="dashboard-section">
+        <h2 class="section-title">Top movers today</h2>
+        
+        <!-- Filter Tabs -->
+        <div class="filter-tabs-bar" style="margin-top: 16px;">
+          <div class="filter-pills-group">
+            <span class="filter-pill active">Gainers</span>
+            <span class="filter-pill">Losers</span>
+            <span class="filter-pill">Volume shockers</span>
+          </div>
+
+          <button class="filter-dropdown-btn">
+            NIFTY 100
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Table -->
+        <div class="table-card-container">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th style="width: 45%;">Company</th>
+                <th style="width: 35%; text-align: right; padding-right: 20px;">Market price (1D)</th>
+                <th style="width: 20%; text-align: right;">Volume</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1: Solar Industries -->
+              <tr>
+                <td>
+                  <div class="table-company-cell">
+                    <div class="table-company-logo" style="background-color: #9e2a2b;">
+                      <span style="color: #ffffff; font-weight: 700; font-size: 16px; font-family: serif;">S</span>
+                    </div>
+                    <span class="table-company-name">Solar Industries Ind</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="table-price-cell">
+                    <svg class="table-sparkline-svg" viewBox="0 0 70 20">
+                      <path d="M 0 16 Q 15 14 25 15 T 45 9 T 70 3" fill="none" stroke="#00d09c" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <div class="table-price-info">
+                      <span class="table-current-price">₹18,975.00</span>
+                      <span class="table-price-diff text-green">420.00 (2.26%)</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-volume-cell">44,088</td>
+              </tr>
+
+              <!-- Row 2: CG Power -->
+              <tr>
+                <td>
+                  <div class="table-company-cell">
+                    <div class="table-company-logo">
+                      <svg width="22" height="22" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" fill="none" stroke="#2b9348" stroke-width="4"/>
+                        <path d="M12 2 A10 10 0 0 1 22 12" fill="none" stroke="#0077b6" stroke-width="4"/>
+                      </svg>
+                    </div>
+                    <span class="table-company-name">CG Power & Ind.Sol.</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="table-price-cell">
+                    <svg class="table-sparkline-svg" viewBox="0 0 70 20">
+                      <path d="M 0 14 Q 20 15 35 12 T 55 7 T 70 4" fill="none" stroke="#00d09c" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <div class="table-price-info">
+                      <span class="table-current-price">₹909.70</span>
+                      <span class="table-price-diff text-green">17.70 (1.98%)</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-volume-cell">8,02,644</td>
+              </tr>
+
+              <!-- Row 3: The Indian Hotels Co -->
+              <tr>
+                <td>
+                  <div class="table-company-cell">
+                    <div class="table-company-logo" style="background-color: #0d1b2a;">
+                      <span style="color: #ffffff; font-weight: 700; font-size: 9px; letter-spacing: 0.5px;">IHCL</span>
+                    </div>
+                    <span class="table-company-name">The Indian Hotels Co</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="table-price-cell">
+                    <svg class="table-sparkline-svg" viewBox="0 0 70 20">
+                      <path d="M 0 15 Q 20 13 40 14 T 55 9 T 70 4" fill="none" stroke="#00d09c" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <div class="table-price-info">
+                      <span class="table-current-price">₹747.05</span>
+                      <span class="table-price-diff text-green">14.30 (1.95%)</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-volume-cell">11,32,519</td>
+              </tr>
+
+              <!-- Row 4: Sun Pharma -->
+              <tr>
+                <td>
+                  <div class="table-company-cell">
+                    <div class="table-company-logo">
+                      <svg width="22" height="22" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="8" fill="none" stroke="#f77f00" stroke-width="3"/>
+                        <circle cx="12" cy="12" r="4" fill="#f77f00"/>
+                      </svg>
+                    </div>
+                    <span class="table-company-name">Sun Pharma. Inds.</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="table-price-cell">
+                    <svg class="table-sparkline-svg" viewBox="0 0 70 20">
+                      <path d="M 0 16 Q 15 15 30 11 T 50 8 T 70 2" fill="none" stroke="#00d09c" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <div class="table-price-info">
+                      <span class="table-current-price">₹1,878.00</span>
+                      <span class="table-price-diff text-green">40.70 (2.22%)</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-volume-cell">4,37,268</td>
+              </tr>
+
+              <!-- Row 5: HDFC Life -->
+              <tr>
+                <td>
+                  <div class="table-company-cell">
+                    <div class="table-company-logo" style="background-color: #b7094c;">
+                      <div style="width: 14px; height: 14px; border: 2px solid #ffffff;"></div>
+                    </div>
+                    <span class="table-company-name">HDFC Life Insurance</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="table-price-cell">
+                    <svg class="table-sparkline-svg" viewBox="0 0 70 20">
+                      <path d="M 0 14 Q 25 15 45 10 T 70 4" fill="none" stroke="#00d09c" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <div class="table-price-info">
+                      <span class="table-current-price">₹561.75</span>
+                      <span class="table-price-diff text-green">10.80 (1.96%)</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-volume-cell">5,25,417</td>
+              </tr>
+
+              <!-- Row 6: Bosch -->
+              <tr>
+                <td>
+                  <div class="table-company-cell">
+                    <div class="table-company-logo">
+                      <svg width="22" height="22" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="9" fill="none" stroke="#222222" stroke-width="2"/>
+                        <line x1="8" y1="12" x2="16" y2="12" stroke="#222222" stroke-width="2"/>
+                        <line x1="12" y1="8" x2="12" y2="16" stroke="#222222" stroke-width="2"/>
+                      </svg>
+                    </div>
+                    <span class="table-company-name">Bosch</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="table-price-cell">
+                    <svg class="table-sparkline-svg" viewBox="0 0 70 20">
+                      <path d="M 0 15 Q 20 16 40 12 T 70 5" fill="none" stroke="#00d09c" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <div class="table-price-info">
+                      <span class="table-current-price">₹47,865.00</span>
+                      <span class="table-price-diff text-green">865.00 (1.84%)</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-volume-cell">5,305</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a href="#" class="see-more-link">See more &gt;</a>
+      </section>
+
+      <!-- 3. Most traded stocks in MTF -->
+      <section class="dashboard-section">
+        <h2 class="section-title">Most traded stocks in MTF</h2>
+        <div class="cards-grid-4" style="margin-top: 18px;">
+          <!-- Card 1: BSE -->
+          <div class="stock-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box">
+                <span style="font-size: 9px; font-weight: 800; color: #0077b6;">BSE</span>
+              </div>
+            </div>
+            <div class="stock-card-name">BSE</div>
+            <div class="stock-card-bottom">
+              <span class="stock-card-price">₹3,191.60</span>
+              <span class="stock-card-change text-red">-74.80 (2.29%)</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Sambhv Steel Tubes -->
+          <div class="stock-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box">
+                <span style="font-size: 8px; font-weight: 700; color: #e65100;">SAMBHV</span>
+              </div>
+            </div>
+            <div class="stock-card-name">Sambhv Steel Tubes</div>
+            <div class="stock-card-bottom">
+              <span class="stock-card-price">₹157.24</span>
+              <span class="stock-card-change text-green">9.67 (6.55%)</span>
+            </div>
+          </div>
+
+          <!-- Card 3: INDO-MIM -->
+          <div class="stock-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box">
+                <span style="font-size: 7.5px; font-weight: 700; color: #e67e22;">INDO-MIM</span>
+              </div>
+            </div>
+            <div class="stock-card-name">INDO-MIM</div>
+            <div class="stock-card-bottom">
+              <span class="stock-card-price">₹1,139.65</span>
+              <span class="stock-card-change text-green">83.75 (7.93%)</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Tata Motors Passenger -->
+          <div class="stock-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#0077b6">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-4H9v-2h6v2h-2v4z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="stock-card-name">Tata Motors Passenger</div>
+            <div class="stock-card-bottom">
+              <span class="stock-card-price">₹300.35</span>
+              <span class="stock-card-change text-red">-3.45 (1.14%)</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="see-more-link">See more &gt;</a>
+      </section>
+
+      <!-- 4. Top intraday stocks -->
+      <section class="dashboard-section">
+        <h2 class="section-title">Top intraday stocks</h2>
+        <div class="cards-grid-4" style="margin-top: 18px;">
+          <!-- Card 1: Sambhv Steel Tubes -->
+          <div class="stock-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box">
+                <span style="font-size: 8px; font-weight: 700; color: #e65100;">SAMBHV</span>
+              </div>
+            </div>
+            <div class="stock-card-name">Sambhv Steel Tubes</div>
+            <div class="stock-card-bottom">
+              <span class="stock-card-price">₹157.04</span>
+              <span class="stock-card-change text-green">9.47 (6.42%)</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Glass Wall Sys. (I) -->
+          <div class="stock-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box">
+                <span style="font-size: 7px; font-weight: 700; color: #0077b6;">GLASSWALL</span>
+              </div>
+            </div>
+            <div class="stock-card-name">Glass Wall Sys. (I)</div>
+            <div class="stock-card-bottom">
+              <span class="stock-card-price">₹270.79</span>
+              <span class="stock-card-change text-green">1.28 (0.47%)</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Cupid -->
+          <div class="stock-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box" style="background-color: #d90429; border-color: #d90429;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#ffffff">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="stock-card-name">Cupid</div>
+            <div class="stock-card-bottom">
+              <span class="stock-card-price">₹261.10</span>
+              <span class="stock-card-change text-red">-3.90 (1.47%)</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Rentomojo -->
+          <div class="stock-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                  <span style="font-size: 10px; font-weight: 800; color: #e63946;">m</span>
+                  <span style="font-size: 5px; color: #e63946;">rentomojo</span>
+                </div>
+              </div>
+            </div>
+            <div class="stock-card-name">Rentomojo</div>
+            <div class="stock-card-bottom">
+              <span class="stock-card-price">₹523.80</span>
+              <span class="stock-card-change text-green">11.05 (2.16%)</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="see-more-link">Intraday screener &gt;</a>
+      </section>
+
+      <!-- 5. Sectors trending today -->
+      <section class="dashboard-section">
+        <h2 class="section-title">Sectors trending today</h2>
+        <div class="table-card-container" style="margin-top: 18px;">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th style="width: 40%;">Sector</th>
+                <th style="width: 40%; text-align: center;">Gainers/Losers</th>
+                <th style="width: 20%; text-align: right;">1D price change</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Sector 1: Leather -->
+              <tr>
+                <td>
+                  <div class="sector-cell">
+                    <span class="sector-icon-box">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 3v6l6 3 6-3V3M3 13l9 4 9-4M3 17l9 4 9-4"/>
+                      </svg>
+                    </span>
+                    <span class="sector-name">Leather</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="ratio-bar-cell">
+                    <span class="ratio-num" style="text-align: right;">4</span>
+                    <div class="ratio-bar-track">
+                      <div class="ratio-bar-fill-green" style="width: 80%;"></div>
+                    </div>
+                    <span class="ratio-num">1</span>
+                  </div>
+                </td>
+                <td class="sector-change-cell text-green">+4.20%</td>
+              </tr>
+
+              <!-- Sector 2: Bearings -->
+              <tr>
+                <td>
+                  <div class="sector-cell">
+                    <span class="sector-icon-box">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                      </svg>
+                    </span>
+                    <span class="sector-name">Bearings</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="ratio-bar-cell">
+                    <span class="ratio-num" style="text-align: right;">7</span>
+                    <div class="ratio-bar-track">
+                      <div class="ratio-bar-fill-green" style="width: 63%;"></div>
+                    </div>
+                    <span class="ratio-num">4</span>
+                  </div>
+                </td>
+                <td class="sector-change-cell text-green">+1.93%</td>
+              </tr>
+
+              <!-- Sector 3: Plastic and Polymers -->
+              <tr>
+                <td>
+                  <div class="sector-cell">
+                    <span class="sector-icon-box">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M10 2v7.31L4.62 17.5A2 2 0 0 0 6.3 20.5h11.4a2 2 0 0 0 1.68-3l-5.38-8.19V2h-4z"/>
+                      </svg>
+                    </span>
+                    <span class="sector-name">Plastic and Polymers</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="ratio-bar-cell">
+                    <span class="ratio-num" style="text-align: right;">19</span>
+                    <div class="ratio-bar-track">
+                      <div class="ratio-bar-fill-green" style="width: 56%;"></div>
+                    </div>
+                    <span class="ratio-num">15</span>
+                  </div>
+                </td>
+                <td class="sector-change-cell text-green">+1.17%</td>
+              </tr>
+
+              <!-- Sector 4: Education -->
+              <tr>
+                <td>
+                  <div class="sector-cell">
+                    <span class="sector-icon-box">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                      </svg>
+                    </span>
+                    <span class="sector-name">Education</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="ratio-bar-cell">
+                    <span class="ratio-num" style="text-align: right;">17</span>
+                    <div class="ratio-bar-track">
+                      <div class="ratio-bar-fill-green" style="width: 57%;"></div>
+                    </div>
+                    <span class="ratio-num">13</span>
+                  </div>
+                </td>
+                <td class="sector-change-cell text-red">-1.26%</td>
+              </tr>
+
+              <!-- Sector 5: Maritime Industries -->
+              <tr>
+                <td>
+                  <div class="sector-cell">
+                    <span class="sector-icon-box">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M2 20a2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1"/>
+                        <path d="M4 18L3 12h18l-1 6"/>
+                        <path d="M12 4v8"/>
+                      </svg>
+                    </span>
+                    <span class="sector-name">Maritime Industries</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="ratio-bar-cell">
+                    <span class="ratio-num" style="text-align: right;">8</span>
+                    <div class="ratio-bar-track">
+                      <div class="ratio-bar-fill-green" style="width: 53%;"></div>
+                    </div>
+                    <span class="ratio-num">7</span>
+                  </div>
+                </td>
+                <td class="sector-change-cell text-red">-1.42%</td>
+              </tr>
+
+              <!-- Sector 6: Telecom -->
+              <tr>
+                <td>
+                  <div class="sector-cell">
+                    <span class="sector-icon-box">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                        <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                        <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                        <line x1="12" y1="20" x2="12.01" y2="20"/>
+                      </svg>
+                    </span>
+                    <span class="sector-name">Telecom</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="ratio-bar-cell">
+                    <span class="ratio-num" style="text-align: right;">6</span>
+                    <div class="ratio-bar-track">
+                      <div class="ratio-bar-fill-green" style="width: 46%;"></div>
+                    </div>
+                    <span class="ratio-num">7</span>
+                  </div>
+                </td>
+                <td class="sector-change-cell text-red">-2.04%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a href="#" class="see-more-link">See all sectors &gt;</a>
+      </section>
+
+      <!-- 6. Most bought ETFs -->
+      <section class="dashboard-section">
+        <h2 class="section-title">Most bought ETFs</h2>
+        <div class="cards-grid-4" style="margin-top: 18px;">
+          <!-- ETF 1: Gold -->
+          <div class="etf-card">
+            <div class="etf-card-category-bar">
+              <span>GOLD</span>
+              <span class="etf-card-category-arrow">&gt;</span>
+            </div>
+            <div class="etf-card-body">
+              <div class="etf-card-header">
+                <span class="etf-card-title">Tata Gold Exchange Trade...</span>
+                <div class="etf-logo-small">
+                  <span style="font-size: 5.5px; font-weight: 700; color: #0077b6;">TATA</span>
+                </div>
+              </div>
+              <div class="stock-card-bottom">
+                <span class="stock-card-price">₹14.79</span>
+                <span class="stock-card-change text-red">-0.06 (0.40%)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ETF 2: Silver -->
+          <div class="etf-card">
+            <div class="etf-card-category-bar">
+              <span>SILVER</span>
+              <span class="etf-card-category-arrow">&gt;</span>
+            </div>
+            <div class="etf-card-body">
+              <div class="etf-card-header">
+                <span class="etf-card-title">Nippon India Silver ETF</span>
+                <div class="etf-logo-small" style="background-color: #d90429;">
+                  <span style="font-size: 6px; font-weight: 700; color: #ffffff;">◆</span>
+                </div>
+              </div>
+              <div class="stock-card-bottom">
+                <span class="stock-card-price">₹222.84</span>
+                <span class="stock-card-change text-red">-1.23 (0.55%)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ETF 3: International -->
+          <div class="etf-card">
+            <div class="etf-card-category-bar">
+              <span>INTERNATIONAL</span>
+              <span class="etf-card-category-arrow">&gt;</span>
+            </div>
+            <div class="etf-card-body">
+              <div class="etf-card-header">
+                <span class="etf-card-title">Motilal Oswal MOSt Shares...</span>
+                <div class="etf-logo-small" style="background-color: #2b2d42;">
+                  <span style="font-size: 5px; font-weight: 700; color: #ffffff;">MO</span>
+                </div>
+              </div>
+              <div class="stock-card-bottom">
+                <span class="stock-card-price">₹334.54</span>
+                <span class="stock-card-change text-green">4.21 (1.27%)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ETF 4: NIFTY 50 -->
+          <div class="etf-card">
+            <div class="etf-card-category-bar">
+              <span>NIFTY 50</span>
+              <span class="etf-card-category-arrow">&gt;</span>
+            </div>
+            <div class="etf-card-body">
+              <div class="etf-card-header">
+                <span class="etf-card-title">Groww Nifty 50 ETF</span>
+                <div class="etf-logo-small" style="background: linear-gradient(135deg, #00d09c, #00b4d8);">
+                  <div style="width: 8px; height: 8px; border-radius: 50%; background: #ffffff;"></div>
+                </div>
+              </div>
+              <div class="stock-card-bottom">
+                <span class="stock-card-price">₹9.46</span>
+                <span class="stock-card-change text-red">-0.02 (0.21%)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="see-more-link">See all ETFs &gt;</a>
+      </section>
+
+      <!-- 7. ETFs by Groww -->
+      <section class="dashboard-section">
+        <h2 class="section-title">ETFs by Groww</h2>
+        <div class="cards-grid-4" style="margin-top: 18px;">
+          <!-- Card 1: Groww PSE ETF -->
+          <div class="stock-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box" style="background: linear-gradient(135deg, #00d09c, #00b4d8);">
+                <div style="width: 14px; height: 14px; border-radius: 50%; background: #ffffff;"></div>
+              </div>
+            </div>
+            <div class="stock-card-name">Groww Nifty PSE ETF</div>
+            <div class="stock-card-bottom">
+              <span class="stock-card-price">₹97.00</span>
+              <span class="stock-card-change text-red">-1.36 (1.38%)</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Groww PSU Bank ETF -->
+          <div class="stock-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box" style="background: linear-gradient(135deg, #00d09c, #00b4d8);">
+                <div style="width: 14px; height: 14px; border-radius: 50%; background: #ffffff;"></div>
+              </div>
+            </div>
+            <div class="stock-card-name">Groww Nifty PSU Bank ...</div>
+            <div class="stock-card-bottom">
+              <span class="stock-card-price">₹83.30</span>
+              <span class="stock-card-change text-red">-0.31 (0.37%)</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Groww Private Bank ETF -->
+          <div class="stock-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box" style="background: linear-gradient(135deg, #00d09c, #00b4d8);">
+                <div style="width: 14px; height: 14px; border-radius: 50%; background: #ffffff;"></div>
+              </div>
+            </div>
+            <div class="stock-card-name">Groww Nifty Private Ba...</div>
+            <div class="stock-card-bottom">
+              <span class="stock-card-price">₹27.50</span>
+              <span class="stock-card-change text-red">-0.20 (0.72%)</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Groww India Defence ETF -->
+          <div class="stock-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box" style="background: linear-gradient(135deg, #00d09c, #00b4d8);">
+                <div style="width: 14px; height: 14px; border-radius: 50%; background: #ffffff;"></div>
+              </div>
+            </div>
+            <div class="stock-card-name">Groww Nifty India Defe...</div>
+            <div class="stock-card-bottom">
+              <span class="stock-card-price">₹94.02</span>
+              <span class="stock-card-change text-green">0.16 (0.17%)</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="see-more-link">See all ETFs &gt;</a>
+      </section>
+
+      <!-- 8. Popular Bonds -->
+      <section class="dashboard-section">
+        <h2 class="section-title">Popular Bonds</h2>
+        <div class="cards-grid-4" style="margin-top: 18px;">
+          <!-- Bond 1: Indel Money -->
+          <div class="bond-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box" style="background-color: #00296b;">
+                <span style="font-size: 7px; font-weight: 800; color: #ffffff; text-align: center; line-height: 1.1;">INDEL<br>MONEY</span>
+              </div>
+            </div>
+            <div class="bond-card-name">Indel Money Ltd. Aug '29</div>
+            <div class="bond-card-stats">
+              <div class="bond-yield-box">
+                <span class="bond-yield-val">11.05%</span>
+                <span class="bond-tenure-val">35 months</span>
+              </div>
+              <div class="bond-rating-badge">
+                A- <span class="bond-rating-dot"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bond 2: Paisalo Digital -->
+          <div class="bond-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box">
+                <span style="font-size: 7px; font-weight: 700; color: #d90429;">PAISALO</span>
+              </div>
+            </div>
+            <div class="bond-card-name">Paisalo Digital Ltd. Feb '28</div>
+            <div class="bond-card-stats">
+              <div class="bond-yield-box">
+                <span class="bond-yield-val">9.85%</span>
+                <span class="bond-tenure-val">16 months</span>
+              </div>
+              <div class="bond-rating-badge">
+                AA <span class="bond-rating-dot"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bond 3: Laxmi India Finance -->
+          <div class="bond-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#a01a10">
+                  <path d="M19 13h-1.5V9.5c0-.8-.7-1.5-1.5-1.5H8c-.8 0-1.5.7-1.5 1.5V13H5c-.6 0-1 .4-1 1v4h2c0 1.1.9 2 2 2s2-.9 2-2h4c0 1.1.9 2 2 2s2-.9 2-2h2v-4c0-.6-.4-1-1-1zm-11-2h8v2H8v-2z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="bond-card-name">Laxmi India Finance Limited Sep '29</div>
+            <div class="bond-card-stats">
+              <div class="bond-yield-box">
+                <span class="bond-yield-val">11.20%</span>
+                <span class="bond-tenure-val">35 months</span>
+              </div>
+              <div class="bond-rating-badge">
+                A <span class="bond-rating-dot"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bond 4: Ugro Capital -->
+          <div class="bond-card">
+            <div class="stock-card-top">
+              <div class="company-logo-box" style="background-color: #d84a1b;">
+                <span style="font-size: 14px; font-weight: 800; color: #ffffff;">U</span>
+              </div>
+            </div>
+            <div class="bond-card-name">Ugro Capital Limited Jun '29</div>
+            <div class="bond-card-stats">
+              <div class="bond-yield-box">
+                <span class="bond-yield-val">10.60%</span>
+                <span class="bond-tenure-val">32 months</span>
+              </div>
+              <div class="bond-rating-badge">
+                A+ <span class="bond-rating-dot"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="see-more-link">See more &gt;</a>
+      </section>
+
+      <!-- 9. Stocks in news today -->
+      <section class="dashboard-section">
+        <h2 class="section-title">Stocks in news today</h2>
+        <div class="news-grid-2x2" style="margin-top: 18px;">
+          <!-- News 1: Bharti Airtel -->
+          <div class="news-card">
+            <div>
+              <div class="news-card-top">
+                <div class="news-company-info">
+                  <div class="news-company-logo" style="background-color: #e60000; border-color: #e60000;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h2v2h-2v-2zm0-10h2v8h-2V6z"/>
+                    </svg>
+                  </div>
+                  <span class="news-company-name">Bharti Airtel</span>
+                </div>
+                <span class="news-change-badge text-red">-2.60%</span>
+              </div>
+              <p class="news-headline-snippet">Bharti Airtel NSE block trade worth Rs. 137.05 crores executed. 743,826 shares traded at Rs. 1,842.50 per sha...</p>
+            </div>
+            <span class="news-timestamp">5 minutes ago</span>
+          </div>
+
+          <!-- News 2: Milky Mist Dairy -->
+          <div class="news-card">
+            <div>
+              <div class="news-card-top">
+                <div class="news-company-info">
+                  <div class="news-company-logo">
+                    <span style="font-size: 6.5px; font-weight: 700; color: #0077b6;">MilkyMist</span>
+                  </div>
+                  <span class="news-company-name">Milky Mist Dairy</span>
+                </div>
+                <span class="news-change-badge text-green">+3.76%</span>
+              </div>
+              <p class="news-headline-snippet">Milky Mist Dairy Food IPO opens on 10 Aug 2026 and closes on 12 Aug 2026. IPO issue price is ₹133-₹140,...</p>
+            </div>
+            <span class="news-timestamp">6 minutes ago</span>
+          </div>
+
+          <!-- News 3: Shyam Metalics -->
+          <div class="news-card">
+            <div>
+              <div class="news-card-top">
+                <div class="news-company-info">
+                  <div class="news-company-logo" style="background-color: #d97706;">
+                    <span style="font-size: 5px; font-weight: 800; color: #ffffff; text-align: center;">SHYAM<br>METALLICS</span>
+                  </div>
+                  <span class="news-company-name">Shyam Metalics</span>
+                </div>
+                <span class="news-change-badge text-red">-1.88%</span>
+              </div>
+              <p class="news-headline-snippet">Shyam Metalics saw an NSE block trade of ~1,327,131 shares worth Rs. 143.1 cr. The trade was executed at Rs....</p>
+            </div>
+            <span class="news-timestamp">9 minutes ago</span>
+          </div>
+
+          <!-- News 4: Texmaco Rail -->
+          <div class="news-card">
+            <div>
+              <div class="news-card-top">
+                <div class="news-company-info">
+                  <div class="news-company-logo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#c1121f">
+                      <polygon points="12,2 22,12 12,22 2,12"/>
+                    </svg>
+                  </div>
+                  <span class="news-company-name">Texmaco Rail</span>
+                </div>
+                <span class="news-change-badge text-green">+2.39%</span>
+              </div>
+              <p class="news-headline-snippet">Texmaco Rail anticipates a 15-20% revenue growth in coming years. The company cites sustained demand an...</p>
+            </div>
+            <span class="news-timestamp">13 minutes ago</span>
+          </div>
+        </div>
+        <a href="#" class="see-more-link">See more news &gt;</a>
+      </section>
+
+    </div>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="content-right">
+      
+      <!-- 1. Your investments Card -->
+      <section class="investments-card">
+        <h2 class="section-title" style="font-size: 18px; margin-bottom: 16px;">Your investments</h2>
+        <div class="investments-current-label">Current</div>
+        <div class="investments-current-value">₹4,58,348</div>
+
+        <div class="investments-stats-list">
+          <div class="investments-stat-row">
+            <span class="investments-stat-label">1D returns</span>
+            <span class="investments-stat-val text-green">+₹56.70 (0.01%)</span>
+          </div>
+
+          <div class="investments-stat-row">
+            <span class="investments-stat-label">Total returns</span>
+            <span class="investments-stat-val text-red">-₹52,152.50 (10.22%)</span>
+          </div>
+
+          <div class="investments-stat-row">
+            <span class="investments-stat-label">Invested</span>
+            <span class="investments-stat-val invested-num">₹5,10,500</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Products & Tools -->
+      <section>
+        <h2 class="section-title" style="font-size: 18px; margin-bottom: 16px;">Products & Tools</h2>
+        <div class="products-tools-container">
+          <!-- Item 1: IPO -->
+          <div class="product-tool-item">
+            <div class="product-tool-left">
+              <span class="product-tool-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                </svg>
+              </span>
+              <span class="product-tool-name">IPO</span>
+            </div>
+            <span class="product-tool-badge">11 open</span>
+          </div>
+
+          <!-- Item 2: Bonds -->
+          <div class="product-tool-item">
+            <div class="product-tool-left">
+              <span class="product-tool-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                  <line x1="7" y1="8" x2="17" y2="8"></line>
+                  <line x1="7" y1="12" x2="17" y2="12"></line>
+                  <line x1="7" y1="16" x2="13" y2="16"></line>
+                </svg>
+              </span>
+              <span class="product-tool-name">Bonds</span>
+            </div>
+            <span class="product-tool-badge">2 open</span>
+          </div>
+
+          <!-- Item 3: ETFs -->
+          <div class="product-tool-item">
+            <div class="product-tool-left">
+              <span class="product-tool-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </span>
+              <span class="product-tool-name">ETFs</span>
+            </div>
+          </div>
+
+          <!-- Item 4: Intraday Screener -->
+          <div class="product-tool-item">
+            <div class="product-tool-left">
+              <span class="product-tool-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 22h14"></path>
+                  <path d="M5 2h14"></path>
+                  <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"></path>
+                  <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"></path>
+                </svg>
+              </span>
+              <span class="product-tool-name">Intraday Screener</span>
+            </div>
+          </div>
+
+          <!-- Item 5: Stocks SIP -->
+          <div class="product-tool-item">
+            <div class="product-tool-left">
+              <span class="product-tool-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </span>
+              <span class="product-tool-name">Stocks SIP</span>
+            </div>
+          </div>
+
+          <!-- Item 6: MTF stocks -->
+          <div class="product-tool-item">
+            <div class="product-tool-left">
+              <span class="product-tool-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </span>
+              <span class="product-tool-name">MTF stocks</span>
+            </div>
+          </div>
+
+          <!-- Item 7: Events calendar -->
+          <div class="product-tool-item">
+            <div class="product-tool-left">
+              <span class="product-tool-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </span>
+              <span class="product-tool-name">Events calendar</span>
+            </div>
+          </div>
+
+          <!-- Item 8: All Stocks screener -->
+          <div class="product-tool-item">
+            <div class="product-tool-left">
+              <span class="product-tool-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                </svg>
+              </span>
+              <span class="product-tool-name">All Stocks screener</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Trading screens Widget -->
+      <section class="trading-screens-widget">
+        <h2 class="section-title" style="font-size: 18px; margin-bottom: 16px;">Trading screens</h2>
+        <div class="trading-screens-container">
+          <!-- Screen 1: Resistance breakouts -->
+          <div class="trading-screen-item">
+            <div class="trading-screen-left">
+              <span class="badge-bullish">Bullish</span>
+              <span class="trading-screen-title">Resistance breakouts</span>
+            </div>
+            <div class="trading-screen-graphic">
+              <svg width="74" height="40" viewBox="0 0 74 40">
+                <line x1="0" y1="20" x2="74" y2="20" stroke="#e0e0e0" stroke-dasharray="2 2" stroke-width="1.5"/>
+                <path d="M 4 28 Q 18 36 28 20 T 54 8 T 70 8" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="58" cy="11" r="3.5" fill="#2a9d8f"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Screen 2: MACD above signal line -->
+          <div class="trading-screen-item">
+            <div class="trading-screen-left">
+              <span class="badge-bullish">Bullish</span>
+              <span class="trading-screen-title">MACD above signal line</span>
+            </div>
+            <div class="trading-screen-graphic">
+              <svg width="74" height="40" viewBox="0 0 74 40">
+                <!-- Histogram bars -->
+                <rect x="4" y="10" width="4" height="10" fill="#a7c957" opacity="0.5"/>
+                <rect x="10" y="12" width="4" height="8" fill="#a7c957" opacity="0.6"/>
+                <rect x="16" y="15" width="4" height="5" fill="#a7c957" opacity="0.7"/>
+                <rect x="22" y="20" width="4" height="4" fill="#f4a261" opacity="0.7"/>
+                <rect x="28" y="20" width="4" height="7" fill="#f4a261" opacity="0.8"/>
+                <rect x="34" y="20" width="4" height="10" fill="#e76f51" opacity="0.9"/>
+                <!-- Signal line -->
+                <path d="M 4 22 Q 22 25 40 18 T 70 12" fill="none" stroke="#0077b6" stroke-width="1.8"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Screen 3: RSI overbought -->
+          <div class="trading-screen-item">
+            <div class="trading-screen-left">
+              <span class="badge-bearish">Bearish</span>
+              <span class="trading-screen-title">RSI overbought</span>
+            </div>
+            <div class="trading-screen-graphic">
+              <svg width="74" height="40" viewBox="0 0 74 40">
+                <!-- Outer bell curve -->
+                <path d="M 6 32 Q 37 4 68 32" fill="none" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="2 2"/>
+                <!-- Vertical bars -->
+                <rect x="12" y="24" width="4" height="10" fill="#e9ecef"/>
+                <rect x="20" y="18" width="4" height="16" fill="#f8d7da"/>
+                <rect x="28" y="12" width="4" height="22" fill="#f5c2c7"/>
+                <rect x="36" y="8" width="5" height="26" fill="#e63946"/>
+                <rect x="45" y="15" width="4" height="19" fill="#f5c2c7"/>
+                <rect x="53" y="22" width="4" height="12" fill="#e9ecef"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Screen 4: RSI oversold -->
+          <div class="trading-screen-item">
+            <div class="trading-screen-left">
+              <span class="badge-bullish">Bullish</span>
+              <span class="trading-screen-title">RSI oversold</span>
+            </div>
+            <div class="trading-screen-graphic">
+              <svg width="74" height="40" viewBox="0 0 74 40">
+                <!-- U-curve -->
+                <path d="M 6 12 Q 37 36 68 12" fill="none" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="2 2"/>
+                <!-- Bars -->
+                <rect x="12" y="16" width="4" height="14" fill="#e9ecef"/>
+                <rect x="20" y="20" width="4" height="10" fill="#d8f3dc"/>
+                <rect x="28" y="24" width="4" height="6" fill="#b7e4c7"/>
+                <rect x="36" y="8" width="5" height="26" fill="#2d6a4f"/>
+                <rect x="45" y="22" width="4" height="8" fill="#d8f3dc"/>
+                <rect x="53" y="17" width="4" height="13" fill="#e9ecef"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="trading-screens-footer">
+            <a href="#" class="see-more-link">Intraday screener &gt;</a>
+          </div>
+        </div>
+      </section>
+
+    </aside>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="app-footer">
+    <div class="footer-inner-container">
+      
+      <!-- Tier 1: Company & Navigation Grid -->
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand & Contact -->
+        <div class="footer-company-info">
+          <div class="footer-groww-brand">
+            <div class="groww-logo-circle" style="width: 32px; height: 32px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M5 13C5 8.58172 8.58172 5 13 5C17.4183 5 21 8.58172 21 13" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+                <path d="M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="footer-brand-text">Groww</span>
+          </div>
+
+          <address class="footer-address" style="font-style: normal;">
+            Vaishnavi Tech Park, South Tower, 3rd Floor<br>
+            Sarjapur Main Road, Bellandur, Bengaluru – 560103<br>
+            Karnataka
+          </address>
+
+          <div>
+            <a href="#" class="footer-contact-link">Contact Us</a>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="footer-social-icons-row">
+            <!-- X (Twitter) -->
+            <a href="#" class="social-icon-btn" aria-label="X">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+
+            <!-- YouTube -->
+            <a href="#" class="social-icon-btn" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#ffffff"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer-download-app-label">Download the App</div>
+          <div class="footer-app-badges-row">
+            <!-- App Store -->
+            <div class="app-store-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-2 .6-2.65 1.35-.58.66-1.09 1.73-.95 2.75 1.01.08 2.06-.5 2.68-1.25z"/>
+              </svg>
+            </div>
+
+            <!-- Google Play -->
+            <div class="app-store-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.36.6 1.24 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="footer-copyright">© 2016-2026 Groww. All rights reserved.</div>
+          <div class="footer-version">Version: 8.0.0</div>
+        </div>
+
+        <!-- Col 2: GROWW links -->
+        <div>
+          <div class="footer-column-heading">GROWW</div>
+          <ul class="footer-links-list">
+            <li class="footer-link-item">About Us</li>
+            <li class="footer-link-item">Pricing</li>
+            <li class="footer-link-item">Blog</li>
+            <li class="footer-link-item">Media & Press</li>
+            <li class="footer-link-item">Careers</li>
+            <li class="footer-link-item">Help & Support</li>
+            <li class="footer-link-item">Trust & Safety</li>
+            <li class="footer-link-item">Investor Relations</li>
+          </ul>
+        </div>
+
+        <!-- Col 3: PRODUCTS 3-column sub-grid -->
+        <div>
+          <div class="footer-column-heading">PRODUCTS</div>
+          <div class="footer-products-columns">
+            <ul class="footer-links-list">
+              <li class="footer-link-item">Stocks</li>
+              <li class="footer-link-item">F&O</li>
+              <li class="footer-link-item">MTF</li>
+              <li class="footer-link-item">ETF</li>
+              <li class="footer-link-item">IPO</li>
+              <li class="footer-link-item">Mutual Funds</li>
+              <li class="footer-link-item">Commodities</li>
+              <li class="footer-link-item">Groww Terminal</li>
+            </ul>
+
+            <ul class="footer-links-list">
+              <li class="footer-link-item">915 Terminal</li>
+              <li class="footer-link-item">Stock Screens</li>
+              <li class="footer-link-item">Algo Trading</li>
+              <li class="footer-link-item">Groww Charts</li>
+              <li class="footer-link-item">Groww Digest</li>
+              <li class="footer-link-item">Demat Account</li>
+              <li class="footer-link-item">Groww AMC</li>
+              <li class="footer-link-item">PMS</li>
+            </ul>
+
+            <ul class="footer-links-list">
+              <li class="footer-link-item">Bonds</li>
+              <li class="footer-link-item">Credit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tier 2: Directory Tabs & Links -->
+      <div class="footer-directory-section">
+        <div class="directory-tabs-nav">
+          <span class="directory-tab active">Share Market</span>
+          <span class="directory-tab">Indices</span>
+          <span class="directory-tab">F&O</span>
+          <span class="directory-tab">Mutual Funds</span>
+          <span class="directory-tab">ETFs</span>
+          <span class="directory-tab">Funds By Groww</span>
+          <span class="directory-tab">Calculators</span>
+          <span class="directory-tab">IPO</span>
+          <span class="directory-tab">Miscellaneous</span>
+        </div>
+
+        <div class="directory-links-grid-5">
+          <!-- Col 1 -->
+          <div class="directory-column">
+            <span class="directory-link">Top Gainers Stocks</span>
+            <span class="directory-link">52 Weeks High Stocks</span>
+            <span class="directory-link">Tata Motors</span>
+            <span class="directory-link">NHPC</span>
+            <span class="directory-link">ITC</span>
+            <span class="directory-link">Wipro</span>
+          </div>
+
+          <!-- Col 2 -->
+          <div class="directory-column">
+            <span class="directory-link">Top Losers Stocks</span>
+            <span class="directory-link">52 Weeks Low Stocks</span>
+            <span class="directory-link">IREDA</span>
+            <span class="directory-link">State Bank of India</span>
+            <span class="directory-link">Adani Power</span>
+            <span class="directory-link">CDSL</span>
+          </div>
+
+          <!-- Col 3 -->
+          <div class="directory-column">
+            <span class="directory-link">Most Traded Stocks</span>
+            <span class="directory-link">Stocks Market Calender</span>
+            <span class="directory-link">Tata Steel</span>
+            <span class="directory-link">Tata Power</span>
+            <span class="directory-link">Bharat Heavy Electricals</span>
+            <span class="directory-link">Indian Oil Corporation</span>
+          </div>
+
+          <!-- Col 4 -->
+          <div class="directory-column">
+            <span class="directory-link">Stocks Feed</span>
+            <span class="directory-link">Suzlon Energy</span>
+            <span class="directory-link">Zomato (Eternal)</span>
+            <span class="directory-link">Yes Bank</span>
+            <span class="directory-link">Infosys</span>
+            <span class="directory-link">NBCC</span>
+          </div>
+
+          <!-- Col 5 -->
+          <div class="directory-column">
+            <span class="directory-link">FII DII Activity</span>
+            <span class="directory-link">IRFC</span>
+            <span class="directory-link">Bharat Electronics</span>
+            <span class="directory-link">HDFC Bank</span>
+            <span class="directory-link">Vedanta</span>
+            <span class="directory-link">Reliance Power</span>
+          </div>
+        </div>
+
+        <div class="show-more-directory-toggle">
+          Show More ˅
+        </div>
+      </div>
+
+      <!-- Tier 3: Regulatory / Others Section -->
+      <div class="footer-regulatory-section">
+        <span class="regulatory-title">Others:</span>
+        <div class="regulatory-links-inline">
+          <span class="regulatory-link-item">NSE</span><span class="regulatory-divider">|</span>
+          <span class="regulatory-link-item">BSE</span><span class="regulatory-divider">|</span>
+          <span class="regulatory-link-item">MCX</span><span class="regulatory-divider">|</span>
+          <span class="regulatory-link-item">Terms and Conditions</span><span class="regulatory-divider">|</span>
+          <span class="regulatory-link-item">Policies and Procedures</span><span class="regulatory-divider">|</span>
+          <span class="regulatory-link-item">Regulatory &amp; Other Info</span><span class="regulatory-divider">|</span>
+          <span class="regulatory-link-item">Privacy Policy</span><span class="regulatory-divider">|</span>
+          <span class="regulatory-link-item">Disclosure</span><span class="regulatory-divider">|</span>
+          <span class="regulatory-link-item">SMART ODR</span><br>
+          <span class="regulatory-link-item">Download Forms</span><span class="regulatory-divider">|</span>
+          <span class="regulatory-link-item">Information Security Practices</span><span class="regulatory-divider">|</span>
+          <span class="regulatory-link-item">Investor Charter and Grievance</span><span class="regulatory-divider">|</span>
+          <span class="regulatory-link-item">Bug Bounty</span><span class="regulatory-divider">|</span>
+          <span class="regulatory-link-item">Groww Pay - Terms of use</span><br>
+          <span class="regulatory-link-item">Groww Pay - Privacy policy</span><span class="regulatory-divider">|</span>
+          <span class="regulatory-link-item">Groww IFSC</span>
+        </div>
+      </div>
+
+      <!-- Tier 4: Alphabetical Stocks Directory -->
+      <div class="footer-alphabet-section">
+        <span class="alphabet-title">Stocks:</span>
+        <div class="alphabet-links-inline">
+          <span class="alphabet-char">A</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">B</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">C</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">D</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">E</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">F</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">G</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">H</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">I</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">J</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">K</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">L</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">M</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">N</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">O</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">P</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">Q</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">R</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">S</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">T</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">U</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">V</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">W</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">X</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">Y</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">Z</span><span class="regulatory-divider">|</span>
+          <span class="alphabet-char">Others</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

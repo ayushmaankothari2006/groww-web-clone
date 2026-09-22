@@ -1,0 +1,115 @@
+/* Reset & Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg-page);
+  color: var(--color-text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Page Layout Container */
+.page-container {
+  max-width: var(--page-max-width);
+  margin: 28px auto 60px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 36px;
+  align-items: start;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.content-right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Section Header */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text-main);
+  letter-spacing: -0.2px;
+}
+
+.see-more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 14px;
+  align-self: flex-start;
+  transition: color 0.15s ease;
+}
+
+.see-more-link:hover {
+  color: var(--color-primary-dark);
+}
+
+/* Common text utilities */
+.text-green {
+  color: var(--color-primary);
+}
+
+.text-red {
+  color: var(--color-danger);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.badge-bullish {
+  background-color: var(--color-primary-subtle);
+  color: var(--color-primary);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+}
+
+.badge-bearish {
+  background-color: var(--color-danger-subtle);
+  color: var(--color-danger);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+}
